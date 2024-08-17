@@ -80,7 +80,7 @@
                             @endif
 
                             <div class="col-12 text-center mt-4">
-                                <button class="btn btn-primary w-50" type="submit">Add Product</button>
+                                <button class="btn btn-primary w-50" type="submit">Update Product</button>
                             </div>
                         </form>
 
