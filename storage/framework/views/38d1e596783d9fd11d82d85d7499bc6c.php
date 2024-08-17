@@ -33,15 +33,20 @@
                         use App\Models\Product;
 
                         $products = Product::all();
-                        // dd($allProduct);
-                        // $Villagers = Villager::where('user_id', auth()->user()->id)->get();
                     ?>
+
                     <tbody>
                         <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <tr>
-                                
-                                
-                                <td></td>
+
+                                <td>
+
+                                    <button wire:click="gotoSingleView(<?php echo e($product->id); ?>)" type="button"
+                                        class="btn btn-sm btn-light">
+                                        <i class="mdi mdi-eye"></i>
+                                    </button>
+                                </td>
+
                                 <td><?php echo e($product->name); ?></td>
                                 <td><?php echo e($product->description); ?></td>
                                 <td><?php echo e($product->price); ?></td>
@@ -54,7 +59,7 @@
                                 ?>
                                 <td><?php echo e($product->category->name); ?></td>
                                 <td><?php echo e($product->sku); ?></td>
-                                
+
                                 <td>
                                     <div class="hstack gap-3 d-flex justify-content-center">
                                         <a href="javascript:void(0);" wire:click="gotoEditFrom(<?php echo e($product->id); ?>)"
@@ -109,8 +114,7 @@
                 
                 
             </div>
-            
-            
+
         </div><!-- end col -->
 
     </div>

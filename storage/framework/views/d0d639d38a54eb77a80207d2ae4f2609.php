@@ -1,5 +1,5 @@
 <?php $__env->startSection('title'); ?>
-    Product Add | Inventory Management System
+    Product View | Inventory Management System
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('css'); ?>
     <link href="<?php echo e(URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css')); ?>" rel="stylesheet" type="text/css" />
@@ -11,10 +11,11 @@
             Inventory Management System
         <?php $__env->endSlot(); ?>
         <?php $__env->slot('title'); ?>
-            Product Add
+            Product View
         <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
     <div class="row">
+
         <div class="col">
 
             <div class="h-100">
@@ -23,9 +24,9 @@
 $__split = function ($name, $params = []) {
     return [$name, $params];
 };
-[$__name, $__params] = $__split('product-add');
+[$__name, $__params] = $__split('product-view', ['id' => session()->get('productId')]);
 
-$__html = app('livewire')->mount($__name, $__params, 'lw-1223873009-0', $__slots ?? [], get_defined_vars());
+$__html = app('livewire')->mount($__name, $__params, 'lw-1309301185-0', $__slots ?? [], get_defined_vars());
 
 echo $__html;
 
@@ -53,4 +54,4 @@ if (isset($__slots)) unset($__slots);
     <script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\MY Projects\WEB\laravel\Inventry_system\Inventry_system\resources\views/product-add.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\MY Projects\WEB\laravel\Inventry_system\Inventry_system\resources\views/product-view.blade.php ENDPATH**/ ?>

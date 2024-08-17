@@ -35,12 +35,9 @@
 
             <div class="h-100">
 
-                {{-- @livewire('home-page-locations') --}}
-
                 @livewire('home-page-table')
 
-
-            </div> <!-- end .h-100-->
+            </div>
 
         </div> <!-- end col -->
 

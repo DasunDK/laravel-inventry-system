@@ -20,16 +20,11 @@
 
             <div class="h-100">
 
-                <!--end row-->
-
-
-
                 @livewire('product-edit', ['id' => session()->get('editId')])
 
+            </div>
 
-            </div> <!-- end .h-100-->
-
-        </div> <!-- end col -->
+        </div>
 
     </div>
 @endsection

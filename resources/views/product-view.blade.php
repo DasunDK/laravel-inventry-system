@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Product Add | Inventory Management System
+    Product View | Inventory Management System
 @endsection
 @section('css')
     <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -12,15 +12,16 @@
             Inventory Management System
         @endslot
         @slot('title')
-            Product Add
+            Product View
         @endslot
     @endcomponent
     <div class="row">
+
         <div class="col">
 
             <div class="h-100">
 
-                @livewire('product-add')
+                @livewire('product-view', ['id' => session()->get('productId')])
 
             </div>
 

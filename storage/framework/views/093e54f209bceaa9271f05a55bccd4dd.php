@@ -19,10 +19,6 @@
 
             <div class="h-100">
 
-                <!--end row-->
-
-
-
                 <?php
 $__split = function ($name, $params = []) {
     return [$name, $params];
@@ -40,10 +36,9 @@ unset($__split);
 if (isset($__slots)) unset($__slots);
 ?>
 
+            </div>
 
-            </div> <!-- end .h-100-->
-
-        </div> <!-- end col -->
+        </div>
 
     </div>
 <?php $__env->stopSection(); ?>

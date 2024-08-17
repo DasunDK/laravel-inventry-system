@@ -34,8 +34,6 @@
 
             <div class="h-100">
 
-                
-
                 <?php
 $__split = function ($name, $params = []) {
     return [$name, $params];
@@ -53,8 +51,7 @@ unset($__split);
 if (isset($__slots)) unset($__slots);
 ?>
 
-
-            </div> <!-- end .h-100-->
+            </div>
 
         </div> <!-- end col -->
 

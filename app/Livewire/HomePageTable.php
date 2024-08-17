@@ -24,6 +24,12 @@ class HomePageTable extends Component
         $this->redirect('product-edit');
     }
 
+    public function gotoSingleView($id)
+    {
+        session()->put('productId', $id);
+        $this->redirect('product-view');
+    }
+
     public function deleteProduct($id)
     {
         try {

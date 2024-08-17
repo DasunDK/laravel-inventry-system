@@ -36,6 +36,7 @@
                     <div class="w-100 p-5">
 
                         <form wire:submit="updateProduct" class="row g-3 needs-validation" novalidate>
+
                             <div class="col-md-6">
                                 <label for="productName" class="form-label">Product Name<span
                                         class="text-danger">*</span></label>
@@ -51,6 +52,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                             </div>
+
                             <div class="col-md-6">
                                 <label for="description" class="form-label">Description</label>
                                 <input wire:model="description" type="text" class="form-control" id="description">
@@ -65,6 +67,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                             </div>
+
                             <div class="col-md-6">
                                 <label for="price" class="form-label">Price<span class="text-danger">*</span></label>
                                 <input wire:model="price" type="text" class="form-control" id="price">
@@ -79,6 +82,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                             </div>
+
                             <div class="col-md-6">
                                 <label for="quantity" class="form-label">Quantity<span
                                         class="text-danger">*</span></label>
@@ -95,6 +99,7 @@ endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
 
                             </div>
+
                             <div class="col-md-6">
                                 <label for="category" class="form-label">Category<span
                                         class="text-danger">*</span></label>
@@ -111,6 +116,7 @@ endif;
 unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
 
                             </div>
+
                             <div class="col-md-6">
                                 <label for="sku" class="form-label">Stock Keeping Unit (SKU)<span
                                         class="text-danger">*</span></label>
@@ -128,7 +134,9 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
 
                             </div>
 
+
                             <div class="col-12 col-md-6 mb-3">
+
                                 <label for="img">Product Image</label>
                                 <input wire:model="img" type="file" accept="image/png, image/jpg, image/jpeg"
                                     class="form-control">
