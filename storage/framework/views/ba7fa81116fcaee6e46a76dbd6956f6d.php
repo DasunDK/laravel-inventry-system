@@ -1,6 +1,6 @@
 <div>
 
-    @php
+    <?php
 
         use App\Models\Product;
 
@@ -8,7 +8,7 @@
         $stockValue = product::sum('price');
         $outOfCount = Product::where('quantity', '<', 15)->count();
 
-    @endphp
+    ?>
 
     <div class="row">
         <div class="col-xl-4 col-md-6 location-one d-md-block">
@@ -24,7 +24,8 @@
                     </div>
                     <div class="d-flex align-items-end justify-content-between mt-4">
                         <div>
-                            <h4 class="fs-22 fw-semibold ff-secondary mb-4">{{ $productCount }}
+                            <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo e($productCount); ?>
+
                             </h4>
                         </div>
                     </div>
@@ -45,7 +46,8 @@
                     </div>
                     <div class="d-flex align-items-end justify-content-between mt-4">
                         <div>
-                            <h4 class="fs-22 fw-semibold ff-secondary mb-4">{{ $stockValue }}
+                            <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo e($stockValue); ?>
+
                             </h4>
                         </div>
                     </div>
@@ -66,7 +68,8 @@
                     </div>
                     <div class="d-flex align-items-end justify-content-between mt-4">
                         <div>
-                            <h4 class="fs-22 fw-semibold ff-secondary mb-4">{{ $outOfCount }}
+                            <h4 class="fs-22 fw-semibold ff-secondary mb-4"><?php echo e($outOfCount); ?>
+
                             </h4>
                         </div>
                     </div>
@@ -78,3 +81,4 @@
     </div> <!-- end row-->
 
 </div>
+<?php /**PATH D:\MY Projects\WEB\laravel\Inventry_system\Inventry_system\resources\views/livewire/dashboard-data.blade.php ENDPATH**/ ?>
