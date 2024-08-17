@@ -5,37 +5,15 @@
         <div class="col-xl-10 mx-auto">
             <div class="card">
                 <div class="card-header border-0 align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">Product Update Form</h4>
+                    <h4 class="card-title mb-0 flex-grow-1">Products Add Form</h4>
 
                 </div><!-- end card header -->
 
 
-                <div class="card card-height-100">
-                    <div class="card-header align-items-center d-flex">
-                        <h4 class="card-title mb-0 flex-grow-1">Product Image</h4>
-                        <div class="flex-shrink-0">
-                            <div class="flex-shrink-0">
-                                <a href="<?php echo e(url('storage/' . $currentImg)); ?>" download="Product Image"
-                                    class="btn btn-primary"><i class=" ri-file-download-line align-bottom"></i>
-                                    Download</a>
-                            </div>
-                        </div>
-                    </div><!-- end card header -->
-
-                    <div class="card-body mx-auto">
-
-                        <a href="<?php echo e(url('storage/' . $currentImg)); ?>" data-fancybox>
-                            <img src="<?php echo e(url('storage/' . $currentImg)); ?>" class="img-thumbnail"
-                                style="height: 333px; width: 800px;" alt="Product Image">
-                        </a>
-
-                    </div><!-- end card body -->
-                </div><!-- end card -->
-
                 <div class="card-body p-0 pb-2">
                     <div class="w-100 p-5">
 
-                        <form wire:submit="updateProduct" class="row g-3 needs-validation" novalidate>
+                        <form wire:submit="addProduct" class="row g-3 needs-validation" novalidate>
                             <div class="col-md-6">
                                 <label for="productName" class="form-label">Product Name<span
                                         class="text-danger">*</span></label>
@@ -152,7 +130,7 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
                             <?php endif; ?><!--[if ENDBLOCK]><![endif]-->
 
                             <div class="col-12 text-center mt-4">
-                                <button class="btn btn-primary w-50" type="submit">Update Product</button>
+                                <button class="btn btn-primary w-50" type="submit">Add Product</button>
                             </div>
                         </form>
 
@@ -164,4 +142,4 @@ unset($__errorArgs, $__bag); ?><!--[if ENDBLOCK]><![endif]-->
     </div>
 
 </div>
-<?php /**PATH D:\MY Projects\WEB\laravel\Inventry_system\Inventry_system\resources\views/livewire/product-edit.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\MY Projects\WEB\laravel\Inventry_system\Inventry_system\resources\views/livewire/product-add.blade.php ENDPATH**/ ?>

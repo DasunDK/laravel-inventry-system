@@ -26,7 +26,7 @@
 
                         <a href="{{ url('storage/' . $currentImg) }}" data-fancybox>
                             <img src="{{ url('storage/' . $currentImg) }}" class="img-thumbnail"
-                                style="height: 333px; width: 800px;" alt="Nic Front Image">
+                                style="height: 333px; width: 800px;" alt="Product Image">
                         </a>
 
                     </div><!-- end card body -->
