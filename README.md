@@ -94,6 +94,11 @@ This is a basic product inventory management system built using Laravel and MySQ
     http://localhost:8000
     ```
 
+10. Credentials to login
+
+    username - admin@gmail.com
+    password - 12345678
+
 ## Deployment
 You can deploy this application to a free hosting service like Heroku or Vercel.
 
