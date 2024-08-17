@@ -105,5 +105,5 @@ This project is licensed under the MIT License.
 - Customize the configuration in the `.env` file as needed.
 
 ## Author
-Developed by [Your Name](https://github.com/yourusername).
+Developed by [Dasun Kumara](https://github.com/DasunDK).
 
